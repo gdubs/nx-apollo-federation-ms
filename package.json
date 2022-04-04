@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "start:apollo-gateway": "nx run apollo-gateway:serve",
-    "start:user-svc": "nx run apollo-user-svc:serve",
-    "start:products-svc": "nx run apollo-products-svc:serve",
-    "start:all-client": "nx run-many --target=serve --projects=plugin-manager,header --parallel --maxParallel=50",
-    "start:all-server": "nx run-many --target=serve --projects=apollo-gateway,apollo-user-svc,apollo-products-svc --parallel --maxParallel=50",
-    "build": "nx build",
-    "test": "nx test"
+    "start": "npx nx serve",
+    "start:apollo-gateway": "npx nx run apollo-gateway:serve",
+    "start:user-svc": "npx nx run apollo-user-svc:serve",
+    "start:products-svc": "npx nx run apollo-products-svc:serve",
+    "start:all-client": "npx nx run-many --target=serve --projects=plugin-manager,header --parallel --maxParallel=50",
+    "start:all-server": "npx nx run-many --target=serve --projects=apollo-gateway,apollo-user-svc,apollo-products-svc --parallel --maxParallel=50",
+    "build": "npx nx build",
+    "test": "npx nx test"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +26,7 @@
     "framer-motion": "^4",
     "graphql": "15.6.1",
     "http": "^0.0.1-security",
+    "nx": "^13.9.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "regenerator-runtime": "0.13.7",
